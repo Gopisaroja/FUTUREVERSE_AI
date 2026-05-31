@@ -1,0 +1,682 @@
+import time as t
+import random as r
+
+def welcome():
+    print("\n🔮 Welcome Explorer...")
+    t.sleep(2)
+    print("\nThis is not just a program.")
+    print("This is a mirror of your possible future 😄")
+
+    print("\nYou will enter your details...")
+    t.sleep(5)
+    print("And we will generate your FUN future story 🚀")
+
+    print("\n⚠️ Just for entertainment purpose 👀")
+
+    print("\n ✨ Get ready to see your future!\n")
+
+def show_header():
+    print("\n========================================")
+    print("           FUTUREVERSE AI")
+    print("========================================")
+
+    print("\n🔮 Your Future is being generated...")
+
+    print("\n📢 Prediction Status:")
+    print("100% based on your current habits  💯")
+    t.sleep(5)
+    print("\n⚠ Disclaimer:")
+    print("This is just for fun... but sometimes even fun predictions can feel real 👀")
+
+    print("\n👉 Don’t overthink... just enjoy 😃\n")
+
+def get_user_input():
+    print("="*40)
+    print(" 🔮 For Calculating your future we need your details.....")
+    t.sleep(2)
+    name=input("Enter your sweet name: ")
+    age=input('Enter your age: ')
+    dept=input("Enter your department: ")
+    code_hrs=input("Enter how many hours you code daily?: \n1. 0 hrs😅\n2. 1-2 hrs😊\n3. 3-4 hrs 🔥\n4. 5-6 hrs🚀\n Your choice (1,2,3,4): ")
+    t.sleep(2)
+    print("🎯 Choose your interest .....\n[1] 🤖 AI/ML\n[2] 📊 Data Science\n[3] 🔐 Cyber Security\n[4] 🌐 Web Development\n[5] 📱 App Development\n[6] 🎮 Game Development\n[7] ☁ Cloud Computing\n[8] 🎨  UI/UX Design\n[9] 😅 No Idea Yet\n[10] 🛌 Chill mode(Veetla Summa Irukanum)\n")
+    interest=input("Enter your interest (1-10): ")
+    print("\nNow we want to know how you react to failure.....")
+    t.sleep(1)
+    failure=input("How do you react to failure?\n1. Give up📉\n2. Try again📈\n3. Keep fighting🚀\nEnter (1,2,3): ")
+
+    coding_love=input("Coding love level (1,2,3):\n1. Love it😎\n2. Ok😐\n3. Hate it😴\n")
+    dream_company=input("Enter your dream company: ")
+    return name,age,dept,code_hrs,interest,dream_company,coding_love
+
+def dream_company_analysis(name,coding_hrs,dream_company):
+    print("\nAnalysing your dream company status 🔮🧠⚙️ ........\n")
+    t.sleep(1)
+    print("📡 Connecting to Future Database...")
+    t.sleep(1)
+
+    print("🔍 Scanning Life Patterns...")
+    t.sleep(1)
+
+    print("🧠 Calculating Outcomes... 30%")
+    t.sleep(1)
+
+    print("📊 Adjusting Probabilities... 50%")
+    t.sleep(1)
+
+    print("🚀 Final Prediction Locked... 100%")
+    t.sleep(1)
+    if coding_hrs=="1":
+        print(name+','+dream_company+' currently does not know your name😂')
+    elif coding_hrs=="2":
+        print(name + ", " + dream_company + " is waiting for your consistency ✨ ")
+    elif coding_hrs=="3":
+        print(name + ", " + dream_company + " has started noticing you 📈")
+    elif coding_hrs=="4":
+        print(name + ", " + dream_company + " is waiting for you to join 🚀")
+    print("\n🔮 FUTUREVERSE AI generating motivation especially for you WARRIOR ⚡ \n")
+    t.sleep(3)
+    motivation=["Don't stop until you reach the top 1%","Even the best coder was once a beginner.","🔮 Your future depends on what you do today, not tomorrow.","🪖 Warrior mindset creates unstoppable future.","🔮 Your future is not predicted… it is created by you.","Work hard now… so your future self can relax later."]
+    print(r.choice(motivation))
+    t.sleep(3)
+
+def ai_ml_timeline(name,coding_love):
+    print("\n🤖 AI/ML FUTURE TIMELINE ACTIVATED 🔮\n")
+    t.sleep(2)
+    print("📅By 2030:")
+
+    if coding_love == "1":
+        print(name + " built first AI model 🤖 (it actually worked 😎)")
+    elif coding_love == "2":
+        print(name + " started AI journey with curiosity 🙂")
+    else:
+        print(name + " struggling with Python but still trying 😴")
+
+    print("Achievement: Hello World → Smart Prediction Started 🧠\n")
+    t.sleep(1)
+    print("📅By 2040:")
+
+    if coding_love == "1":
+        print(name + " became AI Engineer at top company 🚀")
+    elif coding_love == "2":
+        print(name + " working as AI Developer 📊")
+    else:
+        print(name + " finally understood what AI means 😂")
+
+    print("Achievement: Building AI projects that are actively in use ⚙️\n")
+
+    t.sleep(1)
+
+    print("📅By 2050:")
+
+    if coding_love == "1":
+        print(name + " created own AI startup 🚀")
+    elif coding_love == "2":
+        print(name + " leading AI team 👨‍💻")
+    else:
+        print(name + " became stable AI professional 😎")
+
+    print("Achievement: Created positive impact in Industry 🌍\n")
+
+    t.sleep(1)
+
+    print("📅By 2060:")
+
+    if coding_love == "1":
+        print(name + " became AI Mentor for 1000+ students 🌟")
+    elif coding_love == "2":
+        print(name + " respected AI expert in industry 🧠")
+    else:
+        print(name + " finally loves coding ️ (late realization 😄)")
+    print("Expected salary (For entertainment purpose only ⚠️): ",r.randint(800000,2500000))
+
+    print("Achievement: Legacy Mode Activated 🏆\n")
+
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+
+def ds_timeline(name,coding_love):
+
+    print("\n📊 INITIALIZING DATA SCIENCE ENGINE...")
+    print("🔮 Processing data patterns...\n")
+    t.sleep(1)
+    print("📅 2030 — EXPLORATION PHASE")
+
+    if coding_love == "1":
+        print(name + " discovered data patterns 📊 (Excel + Python combo 😎)")
+    elif coding_love == "2":
+        print(name + " started learning Data Science basics 🙂")
+    else:
+        print(name + " confused between Excel and Python 😂")
+
+    print("Achievement: 'First dataset loaded successfully 🧠'\n")
+    t.sleep(1)
+    print("📅 2040 — ANALYST PHASE")
+
+    if coding_love == "1":
+        print(name + " became Data Scientist at top company 🚀")
+    elif coding_love == "2":
+        print(name + " working as Data Analyst 📊")
+    else:
+        print(name + " finally understood what 'CSV' means 😂")
+
+    print("Achievement: Insights extracted from real-world data ⚙️\n")
+    t.sleep(1)
+    print("📅 2050 — PREDICTION PHASE")
+
+    if coding_love == "1":
+        print(name + " built powerful prediction models 📈")
+    elif coding_love == "2":
+        print(name + " leading analytics team 👨‍💻")
+    else:
+        print(name + " now trusts graphs more than people 😄")
+
+    print("Achievement: Future trends predicted successfully 🌍\n")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Data Wizard 🧙 (industry legend 🌟)")
+    elif coding_love == "2":
+        print(name + " respected Data Expert in industry 🧠")
+    else:
+        print(name + " finally enjoys charts & graphs ️😄")
+
+    print("Achievement: Legacy in data science unlocked 🏆\n")
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(600000, 2000000))
+
+
+def cy_sec_timeline(name,coding_love):
+    print("\n🔐 INITIALIZING CYBER SECURITY SYSTEM...")
+    print("🛡️ Scanning threats... loading future...\n")
+    t.sleep(1)
+    print("📅 2030 — LEARNING PHASE")
+
+    if coding_love == "1":
+        print(name + " started ethical hacking journey 💻🔐")
+    elif coding_love == "2":
+        print(name + " learning cybersecurity basics 🙂")
+    else:
+        print(name + " thinking firewall is a physical wall 😂")
+
+    print("Achievement: 'First password understood 🔑'\n")
+    t.sleep(1)
+
+    print("📅 2040 — ANALYST PHASE")
+
+    if coding_love == "1":
+        print(name + " became Cyber Security Analyst 🚀")
+    elif coding_love == "2":
+        print(name + " working in security operations center 🧠")
+    else:
+        print(name + " finally stopped using '123456' password 😂")
+
+    print("Achievement: Systems protected successfully 🔒\n")
+    t.sleep(1)
+    print("📅 2050 — PROTECTOR PHASE")
+
+    if coding_love == "1":
+        print(name + " stopped major cyber attacks 🌍")
+    elif coding_love == "2":
+        print(name + " leading security team 👨‍💻")
+    else:
+        print(name + " now respects hackers AND systems 😄")
+
+    print("Achievement: No security was broken, and the mission was completed successfully.🛡️\n")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Cyber Guardian of internet 🌐")
+    elif coding_love == "2":
+        print(name + " respected security expert in industry 🔐")
+    else:
+        print(name + " finally understands hacking is serious 😎")
+
+    print("Achievement: Digital world protected 🏆\n")
+
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(500000, 1800000))
+
+
+def web_timeline(name, coding_love):
+
+    print("\n🌐 INITIALIZING WEB DEVELOPMENT ENGINE...")
+    print("💻 Loading browsers, CSS, JavaScript magic...\n")
+    t.sleep(5)
+    print("📅 2030 — FRONTEND START")
+
+    if coding_love == "1":
+        print(name + " built first website 🌐 (HTML + CSS magic 😎)")
+    elif coding_love == "2":
+        print(name + " started learning web basics 🙂")
+    else:
+        print(name + " confused why CSS breaks everything 😂")
+
+    print("Achievement: 'First webpage deployed 🚀'\n")
+    t.sleep(1)
+    print("📅 2040 — DEVELOPER PHASE")
+
+    if coding_love == "1":
+        print(name + " became Full Stack Developer 🚀")
+    elif coding_love == "2":
+        print(name + " working as Web Developer 💻")
+    else:
+        print(name + " finally understood JavaScript… sometimes 😂")
+
+    print("Achievement: Websites running live ⚙️\n")
+    t.sleep(1)
+    print("📅 2050 — PROFESSIONAL PHASE")
+
+    if coding_love == "1":
+        print(name + " created popular web app 🌍")
+    elif coding_love == "2":
+        print(name + " leading frontend/backend projects 👨‍💻")
+    else:
+        print(name + " now trusts StackOverflow more than self 😄")
+
+    print("Achievement: Real-world web systems built 🧠\n")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Web Architecture Expert 🌐")
+    elif coding_love == "2":
+        print(name + " respected senior web engineer 🧠")
+    else:
+        print(name + " finally stopped fighting CSS 😄")
+
+    print("Achievement:  🏆\n")
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(400000, 1500000))
+
+
+def app_timeline(name, coding_love):
+
+    print("\n📱 APP DEVELOPMENT PATH SELECTED")
+    print("💻 Building mobile future...\n")
+    t.sleep(1)
+    print("📅 2030 — STARTING PHASE")
+
+    if coding_love == "1":
+        print(name + " built first Android app 📱 (it actually opened 😎)")
+    elif coding_love == "2":
+        print(name + " started learning app development 🙂")
+    else:
+        print(name + " confused between app vs game 😂")
+
+    print("Achievement: 'First app installed successfully 🚀'\n")
+    t.sleep(1)
+    print("📅 2040 — DEVELOPER PHASE")
+
+    if coding_love == "1":
+        print(name + " became Mobile App Developer 🚀")
+    elif coding_love == "2":
+        print(name + " working in app development team 💻")
+    else:
+        print(name + " finally understood Flutter is not butterfly 😂")
+
+    print("Achievement: Real apps published on store ⚙️\n")
+    print("📅 2040 — DEVELOPER PHASE")
+    t.sleep(1)
+
+    print("📅 2050 — SUCCESS PHASE")
+
+    if coding_love == "1":
+        print(name + " created viral mobile app 🌍")
+    elif coding_love == "2":
+        print(name + " leading app development projects 👨‍💻")
+    else:
+        print(name + " now respects UI crashes 😄")
+
+    print("Achievement: Millions of downloads unlocked 📈\n")
+    print("📅 2050 — SUCCESS PHASE")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Mobile App Architect 📱")
+    elif coding_love == "2":
+        print(name + " respected senior app engineer 🧠")
+    else:
+        print(name + " finally stopped breaking UI  😎")
+
+    print("Achievement: App ecosystem contributor 🏆\n")
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(400000, 1600000))
+
+
+def game_timeline(name, coding_love):
+
+    print("\n🎮 GAME DEVELOPMENT PATH SELECTED")
+    print("🕹️ Loading game engine... Unity / Unreal vibes...\n")
+    t.sleep(1)
+    print("📅 2030 — STARTING PHASE")
+
+    if coding_love == "1":
+        print(name + " built first simple game 🎮 (player jumped correctly 😎)")
+    elif coding_love == "2":
+        print(name + " started learning game dev basics 🙂")
+    else:
+        print(name + " confused why game lagging 😂")
+
+    print("Achievement: 'First game launched locally 🚀'\n")
+    t.sleep(1)
+    print("📅 2040 — DEVELOPER PHASE")
+
+    if coding_love == "1":
+        print(name + " became Game Developer 🚀")
+    elif coding_love == "2":
+        print(name + " working in game studio 💻")
+    else:
+        print(name + " finally understood FPS is not food 😂")
+
+    print("Achievement: Game engine mastered ⚙️\n")
+    t.sleep(1)
+    print("📅 2050 — SUCCESS PHASE")
+
+    if coding_love == "1":
+        print(name + " created viral game 🎮")
+    elif coding_love == "2":
+        print(name + " leading game development team 👨‍💻")
+    else:
+        print(name + " now respects bugs in games 😄")
+
+    print("Achievement: Millions of players unlocked 🌍\n")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Game Industry Legend 🎮")
+    elif coding_love == "2":
+        print(name + " respected senior game architect 🧠")
+    else:
+        print(name + " finally stopped rage quitting games ❤️😂")
+
+    print("Achievement: Gaming universe contribution 🏆\n")
+    t.sleep(1)
+
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(300000, 1200000))
+
+
+def cloud_timeline(name, coding_love):
+
+    print("\n☁️ CLOUD COMPUTING PATH SELECTED")
+    print("🖥️ Connecting to servers... AWS / Azure / GCP loading...\n")
+    t.sleep(1)
+    print("📅 2030 — STARTING PHASE")
+
+    if coding_love == "1":
+        print(name + " learned cloud basics ☁️ (what is server 😎)")
+    elif coding_love == "2":
+        print(name + " started exploring cloud platforms 🙂")
+    else:
+        print(name + " thinking cloud means weather 😂")
+
+    print("Achievement: 'First cloud deployment understood 🚀'\n")
+    t.sleep(1)
+    print("📅 2040 — ENGINEER PHASE")
+
+    if coding_love == "1":
+        print(name + " became Cloud Engineer 🚀")
+    elif coding_love == "2":
+        print(name + " working with AWS / Azure 💻")
+    else:
+        print(name + " finally understood server is not a waiter 😂")
+
+    print("Achievement: Applications deployed on cloud ⚙️\n")
+    t.sleep(1)
+    print("📅 2050 — ARCHITECT PHASE")
+
+    if coding_love == "1":
+        print(name + " designed large scale cloud systems 🌍")
+    elif coding_love == "2":
+        print(name + " leading cloud infrastructure team 👨‍💻")
+    else:
+        print(name + " now trusts uptime more than sleep 😄")
+
+    print("Achievement: Scalable systems built 🚀\n")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Cloud Architecture Expert ☁️")
+    elif coding_love == "2":
+        print(name + " respected cloud consultant 🧠")
+    else:
+        print(name + " finally stopped breaking deployments ❤️😂")
+
+    print("Achievement: Global cloud systems contributor 🏆\n")
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(700000, 2200000))
+
+
+def uiux_timeline(name, coding_love):
+
+    print("\n🎨 UI/UX DESIGN PATH SELECTED")
+    print("🖌️ Opening Figma / Canva / Design tools...\n")
+    t.sleep(1)
+    print("📅 2030 — STARTING PHASE")
+
+    if coding_love == "1":
+        print(name + " designed first UI screen 🎨 (button aligned correctly 😎)")
+    elif coding_love == "2":
+        print(name + " started learning UI basics 🙂")
+    else:
+        print(name + " moved button 10 times but still not happy 😂")
+
+    print("Achievement: 'First design prototype created 🚀'\n")
+    t.sleep(1)
+    print("📅 2040 — DESIGNER PHASE")
+
+    if coding_love == "1":
+        print(name + " became UI/UX Designer 🚀")
+    elif coding_love == "2":
+        print(name + " working on user experience projects 💻")
+    else:
+        print(name + " finally understood padding vs margin 😂")
+
+    print("Achievement: User-friendly apps designed ⚙️\n")
+    t.sleep(1)
+    print("📅 2050 — PRODUCT PHASE")
+
+    if coding_love == "1":
+        print(name + " created viral UI design system 🌍")
+    elif coding_love == "2":
+        print(name + " leading design team 👨‍💻")
+    else:
+        print(name + " now respects color palettes 😄")
+
+    print("Achievement: Millions of users love your design ❤️\n")
+    t.sleep(1)
+    print("📅 2060 — LEGACY PHASE")
+
+    if coding_love == "1":
+        print(name + " became Design Architect 🎨")
+    elif coding_love == "2":
+        print(name + " respected UX expert 🧠")
+    else:
+        print(name + " finally stopped overthinking button alignment 😂❤️")
+
+    print("Achievement: Global design systems built 🏆\n")
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+    t.sleep(5)
+    print("Expected salary (For entertainment purpose only ⚠️): ", r.randint(500000, 1800000))
+
+
+def no_idea_timeline(name, coding_love):
+
+    print("\n😅 EXPLORATION MODE ACTIVATED")
+    print("🔍 Searching life direction... please wait...\n")
+    t.sleep(1)
+    print("📅 2030 — CONFUSION PHASE")
+
+    if coding_love == "1":
+        print(name + " exploring AI, DS, Web everything 🤯")
+    elif coding_love == "2":
+        print(name + " watching tutorials but not deciding 😄")
+    else:
+        print(name + " still thinking what to do 😂")
+
+    print("Achievement: 'Successfully Installed 100+ courses, completed 0 😅'\n")
+    t.sleep(1)
+    print("📅 2040 — TRY EVERYTHING PHASE")
+
+    if coding_love == "1":
+        print(name + " tried multiple tech fields 🚀")
+    elif coding_love == "2":
+        print(name + " switching between interests 💻")
+    else:
+        print(name + " still in YouTube tutorial loop 😂")
+
+    print("Achievement: 'Jack of all trades loading... ⚙️'\n")
+    t.sleep(1)
+    print("📅 2050 — DIRECTION FOUND PHASE")
+
+    if coding_love == "1":
+        print(name + " finally found passion 🚀")
+    elif coding_love == "2":
+        print(name + " slowly building skill path 💻")
+    else:
+        print(name + " realized consistency matters 😄")
+
+    print("Achievement: First stable career direction unlocked 🧠\n")
+    t.sleep(1)
+    print("📅 2060 — SUCCESS PHASE")
+
+    if coding_love == "1":
+        print(name + " became successful in chosen field 🚀")
+    elif coding_love == "2":
+        print(name + " respected professional 🧠")
+    else:
+        print(name + " finally proved slow start is still success ❤️")
+
+    print("Achievement: Late but strong comeback 🏆\n")
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo.others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+def chill_timeline(name, coding_love):
+
+    print("\n🛌 VEETLA SUMMA IRUKANUM MODE ACTIVATED")
+    print("😴 Loading maximum relaxation future...\n")
+    t.sleep(1)
+    print("📅 2030 — CHILL PHASE")
+
+    if coding_love == "1":
+        print(name + " is coding... but mostly sleeping 😎💻")
+    elif coding_love == "2":
+        print(name + " learning something... but mostly scrolling 😅")
+    else:
+        print(name + " mastered techniques how to become an expert in sleeping 😴")
+
+    print("Achievement: Alarm defeated daily ⏰❌\n")
+    t.sleep(1)
+    print("📅 2040 — FAMILY QUESTIONS PHASE")
+
+    if coding_love == "1":
+        print(name + " still saying 'I'll start tomorrow' and follows the same routine like eat,scroll,sleep,repeat 😂")
+    elif coding_love == "2":
+        print(name + " exploring options slowly 😄")
+    else:
+        print(name + " became expert in avoiding questions 🏃")
+
+    print("Achievement: Be a person to receive an award of Who heard 'Job eppo?' for 9999+ times 📞😂\n")
+    t.sleep(1)
+    print("📅 2050 — REALIZATION PHASE")
+
+    if coding_love == "1":
+        print(name + " suddenly started learning seriously 🚀")
+    elif coding_love == "2":
+        print(name + " finally chose a direction 🧠")
+    else:
+        print(name + " realized time is running fast 😅")
+
+    print("Achievement: Motivation unlocked late but strong 🔥\n")
+    t.sleep(1)
+    print("📅 2060 — COMEBACK PHASE")
+
+    if coding_love == "1":
+        print(name + " became successful after chill phase 😎")
+    elif coding_love == "2":
+        print(name + " built stable career 🧠")
+    else:
+        print(name + " proved it's never too late️")
+
+    print("Achievement: Late success but legendary comeback 🏆\n")
+    t.sleep(1)
+    print("━━━━━━━━━━━━━━━━━━")
+    print("Final message created especially for you by FUTUREVERSE AI")
+    print(r.choice(quo_others()))
+    print("━━━━━━━━━━━━━━━━━━\n")
+def quo_others():
+    quo=["Not knowing is also part of learning 😎","Every expert was once confused 🔥","Even slow start can lead to strong future ","Chill now, but don’t stop forever 🔥","It always seems impossible until it's done.-Nelson Mandela","The journey of a thousand miles begins witth one step.-Lao Tzu","How long should you try? Until.-Jim Rohn","Believe you can, and you're halfway there.-Theodre Roosevelt","Successful men and women keep moving. They make mistakes, but they don’t quit. ―Conrad Hilton","Fall seven times; stand up eight.-Japanese Proverb"]
+    return quo
+def main():
+    welcome()
+    show_header()
+    name, age, dept, code_hrs, interest, dream_company, coding_love = get_user_input()
+    dream_company_analysis(name,code_hrs,dream_company)
+
+    if interest=="1":
+        ai_ml_timeline(name,coding_love)
+    elif interest=="2":
+        ds_timeline(name,coding_love)
+    elif interest=="3":
+        cy_sec_timeline(name,coding_love)
+    elif interest=="4":
+        web_timeline(name,coding_love)
+    elif interest=="5":
+        app_timeline(name,coding_love)
+    elif interest=="6":
+        game_timeline(name,coding_love)
+    elif interest=="7":
+        cloud_timeline(name,coding_love)
+    elif interest=="8":
+        uiux_timeline(name,coding_love)
+    elif interest=="9":
+        no_idea_timeline(name,coding_love)
+    elif interest=="10":
+        chill_timeline(name,coding_love)
+    else:
+        print("Cool Buddy! Enter a choice inbetween 1 and 10 :)")
+    print("Designed and Developed by \n GOPISAROJA G")
+if __name__ == "__main__":
+    main()
